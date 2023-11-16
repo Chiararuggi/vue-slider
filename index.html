@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id ="app">
+        <div class="img-box">
+            <img :src="slides[slideNumber].immagine" class="img">
+            <h1 :src="title">{{ slides[slideNumber].titolo }}</h1>
+            <p :src="description">{{ slides[slideNumber].contenuto }}</p>
+            <div class="name-container">
+                <p :src="authorName">{{ slides[slideNumber].autoreNome }}</p>
+                <p :src="authorSurname">{{ slides[slideNumber].autoreCognome }}</p>
+            </div>
+        </div>
+        <button @click="back()">indietro</button>
+        <button @click="next()">avanti</button>
+    </div>
+    <!--vue-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
