@@ -1,4 +1,17 @@
 .name-container{
     display: flex;
+    position: absolute;
+    bottom: 6rem;
+    right:81rem;
+    color: black;
+    font-size: 20px;
+}
+
+.img-box{
+    position: relative;
+}
+
+.name-p{
+    margin-right: 0.5rem;
 }
 
