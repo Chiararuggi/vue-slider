@@ -14,12 +14,12 @@
           <h1 :src="title">{{ slides[slideNumber].titolo }}</h1>
           <p :src="description">{{ slides[slideNumber].contenuto }}</p>
           <div class="name-container">
-            <p :src="authorName" class="name-p">{{ slides[slideNumber].autoreNome }}</p>
+            <p :src="authorName" class="m-r">{{ slides[slideNumber].autoreNome }}</p>
             <p :src="authorSurname">{{ slides[slideNumber].autoreCognome }}</p>
           </div>
         </div>
       </div>
-      <button @click="back()">indietro</button>
+      <button @click="back()" class="m-r">indietro</button>
       <button @click="next()">avanti</button>
     </div>
     <!--vue-->
